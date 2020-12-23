@@ -1,0 +1,10 @@
+nsswitch.conf
+ntp.conf
+opt
+os-release
+pam.conf
+pam.d
+passwd
+passwd-
+perl
+pm
