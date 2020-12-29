@@ -12,22 +12,24 @@
 char str[MAX_N + 5], temp[MAX_N + 5];
 int dp[MAX_N + 5];
 
+int is_huiwen(char *str, int ls, int rs, char *temp) {
+    for (int i = ls, j = 0; i <= rs; i++, j++) {
+        if (str[i] != temp[j]) return 0;
+    }
+    return 1;
+}
+
 int main() {
     scanf("%s", str);
     int n = strlen(str);
-    for (int i = 1; i <= n; i++) {
-        int flag = -1, cnt = 0;
-        for (int j = i - 1; j >= 0; j--) {
+    for (int i = 0; i < n; i++) {
+        int flag = 0, cnt = 0;
+        for (int j = i, k = 0; j >= 0; j--, k++) {
             temp[cnt++] = str[j];
-            if (j >= 0 && temp[cnt - 1] == temp[cnt - 2]) cnt -= 2;
-            if (cnt == 0) {
-                flag = j + 1;
-                break;
-            }
-        }
-        if (flag >= 0) dp[i] = dp[flag] + 1; 
-        else dp[i] = dp[i - 1] + 1;
+            if (is_huiwen(str, j ,i, temp)) flag = j - 1;
+        } 
+        dp[i] = (flag == -1 ? 0 : dp[flag] + 1);
     }
-    printf("%d\n", dp[n] - 1);
+    printf("%d\n", dp[n - 1]);
     return 0;
 }
