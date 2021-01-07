@@ -11,7 +11,7 @@
 using namespace std;
 
 string str, ans[205];
-int index[105], cnt, flag;
+int index[105], cnt, cnt_n;
 
 int is_nospam(int ind) {
     if (str[ind + 1] == 'o' && str[ind + 2] == 's' && str[ind + 3] == 'p'
@@ -21,23 +21,27 @@ int is_nospam(int ind) {
     return 0;
 }
 
-int is_at(int ind) {
-    if (ind != 0 && ind + 1 != str.length() - 1 && str[ind - 1] != '.' 
-        && str[ind + 2] != '.' && str[ind + 1] == 't') return 1;
+int is_ok(string s) {
+    if (s[0] == '@' || s[s.length() - 1] == '@' || 
+        s[0] == '.' || s[s.length() - 1] == '.') {
+            return 1;
+        }
+    for (int i = 0; i < s.length(); i++) {
+        if (s[i] == '@') {
+            if (s[i - 1] == '.' || s[i + 1] == '.') return 1;
+            break;
+        }
+    }
     return 0;
 }
 
-void answer() {
-    for (int i = 1; i <= cnt; i++) {
-        string s = str;
-        ans[i] = s.replace(index[i], 2, "@");
-    }
-    if (flag) {
-        for (int i = 1, j = cnt + 1; i <= cnt; i++, j++) {
-            string s = ans[i];
-            ans[j] = index[0] > index[i] ? s.replace(index[0] - 1, 6, "") : 
-            s.replace(index[0], 6, "");
-        } 
+void answer(string str) {
+    for (int i = 0; str[i]; i++) {
+        if (str[i] == 'a' && str[i + 1] == 't') {
+            string s = str;
+            ans[++cnt] = s.replace(i, 2, "@");
+            i += 1;
+        }
     }
     return ;
 }
@@ -46,8 +50,9 @@ bool cmp(string str1, string str2) {
     return str1 < str2;
 }
 
-void output(int num) {
-    for (int i = 1; i <= num; i++) {
+void output() {
+    for (int i = 1; i <= cnt; i++) {
+        if (is_ok(ans[i]) || ans[i] == ans[i - 1]) continue;
         cout << ans[i] << endl;
     }
     return ;
@@ -57,23 +62,17 @@ int main() {
     cin >> str;
     for (int i = 0; str[i]; i++) {
         if (str[i] == 'n' && is_nospam(i)) {
-            index[0] = i;
+            index[++cnt_n] = i;
             i += 5;
-            flag = 1;
-        }
-        else if (str[i] == 'a' && is_at(i)) {
-            cnt++;
-            index[cnt] = i;
-            i += 1;
         }
     }
-    answer();
-    if (flag) {
-        sort(ans + 1, ans + (cnt << 1) + 1, cmp);
-        output((cnt << 1));
-    } else {
-        sort(ans + 1, ans + cnt + 1, cmp);
-        output(cnt);
+    answer(str);
+    for (int i = 1; i <= cnt_n; i++) {
+        string s = str;
+        string ss = s.replace(index[i], 6, "");
+        answer(ss);
     }
+    sort(ans + 1, ans + cnt + 1, cmp);
+    output();
     return 0;
 }
