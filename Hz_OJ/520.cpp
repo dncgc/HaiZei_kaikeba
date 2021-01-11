@@ -8,23 +8,26 @@
 #include <iostream>
 #include <cstdio>
 using namespace std;
-#define MAX_A 1940500
-#define MAX_N 2940500
-long long s[MAX_N + 5];
+
+long long Sum(long long a, long long b) {
+    return (a + b) * (b - a + 1) >> 1;
+}
 
 int main() {
-    int a;
-    for (int i = 1; i <= MAX_N; i++) {
-        s[i] += s[i - 1] + i;
-    }
+    int a, max_a;
     scanf("%d", &a);
-    for (int i = a; i <= MAX_A; i++) {
-        for (int j = i + 1; j <= MAX_N; j++) {
-            if (s[i - 1] == s[j] - s[i]) {
-                printf("%d %d\n", i, j);
+    max_a = 10 * a;
+    for (int i = a; i < max_a; i++) {
+        int l = i + 1, r = max_a;
+        long long sum = Sum(1, i - 1);
+        while (l <= r) {
+            int mid = (l + r) >> 1;
+            long long SUM = Sum(i + 1, mid);
+            if (sum == SUM) {
+                printf("%d %d\n", i, mid);
                 return 0;
-            }
-            else if (s[i - 1] < s[j] - s[i]) break;
+            } else if (sum < SUM) r = mid - 1;
+            else l = mid + 1;
         }
     }
     return 0;

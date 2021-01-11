@@ -14,51 +14,36 @@ struct Node {
     int money, ind;
 };
 Node node[505];
-int m, n, ans, ans2;
+int m, n, mark[1005];
 
 bool cmp(const Node &a, const Node &b) {
+    if (a.money == b.money) return a.ind < b.ind;
     return a.money > b.money;
 }
 
-bool cmp2(const Node &a, const Node &b) {
-    if (a.ind == b.ind) return a.money > b.money;
-    return a.ind < b.ind;
-}
-
-int main() {
-    scanf("%d%d", &m, &n);
+void read() {
     for (int i = 1; i <= n; i++) {
         scanf("%d", &node[i].ind);
     }
     for (int i = 1; i <= n; i++) {
         scanf("%d", &node[i].money);
     }
+}
+
+int main() {
+    scanf("%d%d", &m, &n);
+    read();
     sort(node + 1, node + n + 1, cmp);
-    for (int i = 1, k = 1; i <= n; i++, k++) {
-        int j = i + 1;
-        if (!node[i].money) {
-            k--;
-            continue;
-        }
-        if (node[i].ind < k) {
-            ans += node[i].money;
-            k--;
-            continue;
-        }
-        while(node[j].money == 0 && j < n) j++;
-        if (node[j].ind < node[i].ind && node[j].ind >= k && 
-            node[j].money != 0) {
-            node[j].money = 0;
-            i--;
+    mark[0] = 1;
+    for (int i = 1; i <= n; i++) {
+        for (int j = node[i].ind; j >= 0; j--) {
+            if (!mark[j]) {
+                mark[j] = 1;
+                break;
+            }
+            if (!j) m -= node[i].money;
         }
     }
-    sort(node + 1, node + n + 1, cmp2);
-    for (int i = 1, k = 1; i <= n; i++, k++) {
-        if (node[i].ind < k) {
-            ans2 += node[i].money;
-            k--;
-        }
-    }
-    printf("%d\n", (ans < ans2 ? m - ans: m - ans2));
+    printf("%d\n", m);
     return 0;
 }
