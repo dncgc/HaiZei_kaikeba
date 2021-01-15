@@ -7,6 +7,7 @@
 
 #include <iostream>
 #include <stack>
+#include <cstdio>
 using namespace std;
 #define MAX_N 10000
 struct Node {
@@ -18,16 +19,16 @@ int n;
 
 int main() {
     Node node;
-    cin >> node.v >> node.c >> n;
+    scanf("%d%lf%d", &node.v, &node.c, &n);
     s.push(node);
     int v;
     double c;
-    char op;
+    char op[10];
     for (int i = 0; i < n; i++) {
-        cin >> op;
-        switch (op) {
+        scanf("%s", op);
+        switch (op[0]) {
             case 'P': {
-                cin >> v >> c;
+                scanf("%d%lf", &v, &c);
                 node = s.top();
                 node.c = (node.v * node.c + v * c) / (node.v + v);
                 node.v += v;
