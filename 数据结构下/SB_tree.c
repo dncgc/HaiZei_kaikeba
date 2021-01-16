@@ -44,14 +44,31 @@ void update_size(Node *root) {
     root->size = root->lchild->size + root->rchild->size + 1;
 }
 
+Node *roate_left(Node *root) {
+    Node *temp = root->rchild;
+    root->rchild = temp->lchild;
+    temp->lchild = root;
+    update_size(root);
+    update_size(temp);
+    return temp;
+}
+
+Node *roate_right(Node *root) {
+    Node *temp = root->lchild;
+    root->lchild = temp->rchild;
+    temp->rchild = root;
+    update_size(root);
+    update_size(temp);
+    return temp;
+}
+
 Node *maintain(Node *root) {
     if (S(R(root)) >= S(L(L(root))) && 
         S(R(root)) >= S(R(L(root))) &&
         S(L(root)) >= S(R(R(root))) && 
-        S(L(root)) >= S(L(R(root)))) 
-    {
+        S(L(root)) >= S(L(R(root)))) {
         return root;
-        }
+    }
     if (S(R(root)) < S(L(root))) {
         if (S(R(root)) < S(R(L(root)))) {
             root->lchild = roate_left(root->lchild);
@@ -63,6 +80,7 @@ Node *maintain(Node *root) {
         }
         root = roate_left(root);
     }
+    return root;
 }
 
 Node *insert(Node *root, int val) {
@@ -130,5 +148,6 @@ int main() {
         output(root);
         printf("--------------\n");
     }
+    clear(root);
     return 0;
 }
