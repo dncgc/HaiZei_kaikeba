@@ -15,13 +15,10 @@ struct Node {
 };
 int n, x, y;
 int dir[12][2] = {2, 1, 2, -1, 1, 2, 1, -2, -1, 2, -1, -2, -2, 1, -2 ,-1, 2, 2, 2, -2, -2, 2, -2, -2};
-int ans[505][505];
+int mmap[505][505];
 
-int bfs(int xx, int yy) {
+void bfs(int xx, int yy) {
     queue<Node> que;
-    char mmap[505][505] = {0};
-    if (xx == 1 && yy == 1) return 0;
-    if (ans[xx][yy] != 0) return ans[xx][yy];
     que.push((Node){xx, yy, 0});
     mmap[xx][yy] = 1;
     while (!que.empty()) {
@@ -31,25 +28,19 @@ int bfs(int xx, int yy) {
             int xxx = temp.x + dir[i][0];
             int yyy = temp.y + dir[i][1];
             if (xxx < 1 || yyy < 1 || xxx > 500 || yyy > 500 || mmap[xxx][yyy] != 0) continue;
-            if (xxx == 1 && yyy == 1) {
-                ans[temp.x][temp.y] = 1;
-                return temp.step + 1;
-            }
-            if (ans[xxx][yyy] != 0) {
-                return ans[xxx][yyy] + temp.step;
-            }
             que.push((Node){xxx, yyy, temp.step + 1});
-            mmap[xxx][yyy] = 1;
+            mmap[xxx][yyy] = temp.step + 1;
         }
     }
 }
 
 int main() {
     scanf("%d", &n);
+    bfs(1, 1);
+    mmap[1][1] = 0;
     for (int i = 0; i < n; i++) {
         scanf("%d%d", &x, &y);
-        ans[x][y] = bfs(x, y);
-        printf("%d\n", ans[x][y]);
+        printf("%d\n", mmap[x][y]);
     }
     return 0;
 }
