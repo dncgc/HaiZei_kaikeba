@@ -84,13 +84,13 @@ Node *combineNode(Node *a, Node *b) {
     temp->rchild = b;
     return temp;
 }
-
+/*
 void put_min(Node **arr, int n) {
     for (int i = n - 1; i >= 0; i--) {
         if (arr[i]->p < arr[n]->p) swap(arr[i], arr[n]);
     }
 }
-/*
+
 Node *getHaffmantree(Node **arr, int n) {
     for (int i = 1; i < n; i++) {
         put_min(arr, n - i);
