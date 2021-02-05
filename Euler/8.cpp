@@ -19,12 +19,13 @@ int main() {
     }
     long long t = ans;
     while(str[r]) {
-        if (str[l] == 0) cnt--;
-        r++, l++;
-        if (str[r] == 0) cnt++;
-        if (str[r] != '0') t *= str[r] - '0';
-        if (str[l - 1] != '0') t /= str[l - 1] - '0';
-        if (!cnt) ans = max(ans, t);
+        if (str[l] == '0') cnt--;
+        else t /= str[l] - '0';
+        l++;
+        if (str[r] == '0') cnt++;
+        else t *= str[r] - '0';
+        if (cnt == 0) ans = max(ans, t);
+        r++;
     }
     cout << ans << endl;
     return 0;
