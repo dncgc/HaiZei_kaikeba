@@ -14,6 +14,7 @@ public:
     Data(int x, int y) : x(x), y(y) {
         cout << "data : " << this << endl;
     }
+    friend ostream &operator<<(ostream &out, const Data &d); //声明友元函数。
 private:
     int x, y;
 };
@@ -46,7 +47,14 @@ void add_one(int &x) { //(左值)引用,传引用不会产生任何拷贝行为
     return ;
 }
 
+ostream &operator<<(ostream &out, const Data &d) {
+    out <<  "(" << d.x << ", " << d.y << ")";
+    return out;
+}
+
 int main() {
+    Data d(10, 9);
+    cout << d << endl;
     int n = 3;
     cout << "n = " << n << endl;
     add_one(n);
