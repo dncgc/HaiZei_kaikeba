@@ -18,8 +18,9 @@ int main() {
         cin >> a;
         arr.push_back(a);
     }
-    sort(arr.begin(), arr.end());
+    //sort(arr.begin(), arr.end());
     //nth_element(); //自学，将笔记发到钉钉群中
+    nth_element(arr.begin(), arr.begin() + n / 2, arr.end());
     int pos = arr[n / 2], sum = 0;
     for (int i = 0; i < arr.size(); i++) {
         sum += abs(arr[i] - pos);
