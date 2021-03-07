@@ -16,6 +16,10 @@ public:
     Animal(const Animal &a) : name(a.name) {
         cout << "Animal default constructor" << endl;
     } 
+    Animal &operator=(const Animal &a) {
+        this->name = a.name;
+        return *this;
+    }
     void say() {
         cout << "my name is " << name << endl;
     }
@@ -35,8 +39,12 @@ public:
     Cat() : Animal("Cat MIMI") {
         cout << "Cat default constructor" << endl;
     }
-    Cat(const Cat &c) : Animal(c) {
+    Cat(const Cat &c) : Animal(c) { //一定要显示调用父类的拷贝构造
         cout << "Cat copy constructor" << endl;
+    }
+    Cat &operator=(const Cat &c) {
+        this->Animal::operator=(c); //显示调用父类的赋值运算符
+        return *this;
     }
     void say1() {
         cout << "miaomiaomiao, my name is " << name << endl;
@@ -61,7 +69,7 @@ public:
     int x;
 };
 
-class B : public A {
+class B : virtual public A { //虚继承，解决菱形继承的问题，两个相同的虚继承的部分会被编译器合并成一处
 public:
     void setX(int x) { 
         cout << "set X, &X = " << &(this->x) << endl;
@@ -70,7 +78,7 @@ public:
     }
 };
 
-class C : public A {
+class C : virtual public A {
 public:
     int getX() { 
         cout << "get X, &x = " << &(this->x) << endl;
