@@ -36,6 +36,17 @@ template<typename T, typename U>
 auto add(T a, U b) -> decltype(a + b) {  //无 bug 版
     return a + b;
 }
+//模板偏特化
+template<typename T, typename U>
+auto add(T *a, U *b) -> decltype(add(*a, *b)) {
+    return add(*a, *b);
+}
+//模板特化
+template<>
+int add(int a, int b) {
+    cout << "add int" << endl;
+    return a + 2 * b;
+}
 
 auto func(int a, int b) -> int {   //返回值后置
     return a + b;
@@ -52,11 +63,17 @@ int main() {
     A a(3), b(5);
     cout << a + b << endl;
     cout << add(a, b) << endl;
-    cout << add(1, 2) << endl;
+    cout << add<int>(1, 2) << endl;
     cout << add(1.5, 2.8) << endl;
     //cout << add<double>(3, 1.5) << endl; //显示调用模板
     cout << add(3, 1.5) << endl;
     decltype(1 + 2) x;  //等价于定义了整型变量x
     cout << typeid(x).name() << endl;
+
+    int n = 123, m = 456;
+    int *p = &n, *q = &m;
+    int **pp = &p, **qq = &q;
+    cout << add(p, q) << endl;
+    // cout << add(pp, qq) << endl;
     return 0;
 }
