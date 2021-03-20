@@ -8,10 +8,10 @@
 #include <iostream>
 using namespace std;
 
-template<int N>
+/*template<int N>
 struct is_prime {
     static constexpr int r = 0;
-};
+};*/
 
 template<int n>
 struct sum {
@@ -75,6 +75,46 @@ template<int n>
 struct is_even {
     static constexpr char *r = judge1<isEven<n>::r>::r;
     //static constexpr char *r = judge<getBad<n>::s, getGood<n>::s>::s;
+};
+
+template<int i, int n>
+struct getNextI {
+    static constexpr int r = (n % i ? i + 1 : 0);
+};
+
+template<int i, int n>
+struct getNextN {
+    static constexpr int r = (i * i <= n ? n : 0);
+};
+
+template<int i, int n>
+struct __test_prime {
+    static constexpr int r = __test_prime<getNextI<i, n>::r, getNextN<i, n>::r>::r;
+};
+
+template<int n>
+struct __test_prime<0, n> {
+    static constexpr int r = 0;
+};
+
+template<int i>
+struct __test_prime<i, 0> {
+    static constexpr int r = 1;
+};
+
+template<>
+struct __test_prime<0, 0> {
+    static constexpr int r = 1;
+};
+
+template<int n>
+struct if_condition {
+    static constexpr const char *r = (n ? "YES" : "NO");
+};
+
+template<int n>
+struct is_prime {
+    static constexpr const char* r = if_condition<__test_prime<2, n>::r>::r;
 };
 
 int main() {
