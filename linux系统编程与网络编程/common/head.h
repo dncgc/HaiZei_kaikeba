@@ -18,6 +18,7 @@
 #include <errno.h>
 #include <sys/select.h>
 #include <sys/time.h>
+#include <sys/wait.h>
 
 #include "common.h"
 
