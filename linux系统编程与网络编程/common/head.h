@@ -19,6 +19,7 @@
 #include <sys/select.h>
 #include <sys/time.h>
 #include <sys/wait.h>
+#include <sys/file.h>
 
 #include "common.h"
 
