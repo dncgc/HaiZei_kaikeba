@@ -82,5 +82,11 @@ int main() {
         cout << arr2[i] << " ";
     }
     cout << endl;
+    
+    haizei::sort(arr2, 0, 4, [](int a, int b) -> bool {return a < b;});
+    for (int i = 0; i < 5; i++) {
+        cout << arr2[i] << " ";
+    }
+    cout << endl;
     return 0;
 }

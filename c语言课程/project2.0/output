@@ -1,0 +1,2436 @@
+g++ -I./ -c main.c 
+In file included from main.c:10:
+main.c: In function ‘void testfunc_haizei_add()’:
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:17:5: note: in expansion of macro ‘EXPECT_EQ’
+   17 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:73:25: note: in expansion of macro ‘EXPECT’
+   73 | #define EXPECT_NE(a, b) EXPECT(a, b, !=)
+      |                         ^~~~~~
+main.c:18:5: note: in expansion of macro ‘EXPECT_NE’
+   18 |     EXPECT_NE(add(3, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:20:5: note: in expansion of macro ‘EXPECT_EQ’
+   20 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+main.c: In function ‘void testfunc_haizei_add2()’:
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:77:25: note: in expansion of macro ‘EXPECT’
+   77 | #define EXPECT_GE(a, b) EXPECT(a, b, >=)
+      |                         ^~~~~~
+main.c:24:5: note: in expansion of macro ‘EXPECT_GE’
+   24 |     EXPECT_GE(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:74:25: note: in expansion of macro ‘EXPECT’
+   74 | #define EXPECT_LT(a, b) EXPECT(a, b, <)
+      |                         ^~~~~~
+main.c:25:5: note: in expansion of macro ‘EXPECT_LT’
+   25 |     EXPECT_LT(add(3, 2), 6);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:27:5: note: in expansion of macro ‘EXPECT_EQ’
+   27 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+main.c: In function ‘void test_haizei_funcadd()’:
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:31:5: note: in expansion of macro ‘EXPECT_EQ’
+   31 |     EXPECT_EQ(add(3, 4), 7);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:32:5: note: in expansion of macro ‘EXPECT_EQ’
+   32 |     EXPECT_EQ(add(1, 2), 5);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:63:9: note: in expansion of macro ‘P’
+   63 |         P(_a, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:64:9: note: in expansion of macro ‘P’
+   64 |         P(" vs ", YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:41:5: error: expected primary-expression before ‘int’
+   41 |     int : "%d",\
+      |     ^~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:42:5: error: expected primary-expression before ‘double’
+   42 |     double : "%lf",\
+      |     ^~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:43:5: error: expected primary-expression before ‘float’
+   43 |     float : "%f",\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:44:5: error: expected primary-expression before ‘long’
+   44 |     long long : "%lld",\
+      |     ^~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:45:5: error: expected primary-expression before ‘const’
+   45 |     const char * : "%s"\
+      |     ^~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+./haizei/test.h:40:17: error: ‘_Generic’ was not declared in this scope
+   40 | #define TYPE(a) _Generic((a),\
+      |                 ^~~~~~~~
+./haizei/test.h:50:31: note: in expansion of macro ‘TYPE’
+   50 |     sprintf(frm, color("%s"), TYPE(a));\
+      |                               ^~~~
+./haizei/test.h:65:9: note: in expansion of macro ‘P’
+   65 |         P(_b, YELLOW_HL);\
+      |         ^
+./haizei/test.h:72:25: note: in expansion of macro ‘EXPECT’
+   72 | #define EXPECT_EQ(a, b) EXPECT(a, b, ==)
+      |                         ^~~~~~
+main.c:34:5: note: in expansion of macro ‘EXPECT_EQ’
+   34 |     EXPECT_EQ(add(1, 2), 3);
+      |     ^~~~~~~~~
+make: *** [makefile:11：main.o] 错误 1
