@@ -19,7 +19,7 @@ private:
 };
 
 ostream &operator<<(ostream &out, const A &a) {
-    cout << "Class A : " << a.x;
+    out << "Class A : " << a.x;
     return out;
 }
 
