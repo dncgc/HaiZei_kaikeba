@@ -22,7 +22,11 @@
 #include <sys/file.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
+#include <pthread.h>
+#include <sys/sem.h>
+#include <sys/msg.h>
 
 #include "common.h"
+#include "my_popen.h"
 
 #endif
