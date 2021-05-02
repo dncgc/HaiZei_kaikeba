@@ -30,3 +30,23 @@ int make_block(int fd) {
     }
     return 0;
 }
+
+int socket_create(int port) {
+    int sockfd;
+    struct sockaddr_in addr;
+    bzero(&addr, sizeof(addr));
+    if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+        return -1;
+    }
+    addr.sin_family = AF_INET;
+    addr.sin_port = htons(port);
+    addr.sin_addr.s_addr = inet_addr("0.0.0.0");
+    if (bind(sockfd, (struct sockaddr*)&addr, sizeof(addr)) < 0) {
+        return -1;
+    }
+    if (listen(sockfd, 20) < 0) {
+        return -1;
+    }
+
+    return sockfd;
+}

@@ -14,7 +14,7 @@ int main() {
         exit(1);
     }
     if (pid == 0) {
-        execlp("ls", "ls", "/etc/hosts", NULL);
+        execlp("vim", "vim", "/etc/hosts", NULL);
         printf("Haha\n"); //子进程已经替换为cat，不会再执行
         fflush(stdout);
     } else {

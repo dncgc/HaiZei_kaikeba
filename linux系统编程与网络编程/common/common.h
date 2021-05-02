@@ -10,6 +10,7 @@
 
 int make_nonblock(int fd);
 int make_block(int fd);
+int socket_create(int port);
 
 //int make_block(int fd, int op)
 #endif
