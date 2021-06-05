@@ -12,6 +12,7 @@ int next[10];
 
 // 在ind节点后，添加节点p，
 void add(int ind, int p, int val) {
+    next[p] = next[ind];
     next[ind] = p;
     data[p] = val;
     return ;
@@ -24,6 +25,7 @@ int main() {
     add(5, 2 ,2);
     add(2, 7, 3);
     add(7, 9, 100);
+    add(5, 6, 123);
     int p = head;
     while (p != 0) {
         printf("%d->", data[p]);
